@@ -3,7 +3,7 @@ public class Empresa {
     private String direccion;
     private int telefono;
     private int NIT;
-    private int edad;
+    
 
     public Empresa(String nombreEmpresa, String direccion, int telefono, int NIT) {
         this.nombreEmpresa = nombreEmpresa;
