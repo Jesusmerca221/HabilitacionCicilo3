@@ -1,7 +1,19 @@
-public class movimientoDinero {
+package com.example.Habilitacion_ciclo3.entities;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "movimiento")
+public class movimientoDinero {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    @Column(name = "monto")
     private Double montoMovimiento;
+    @Column(name = "concepto")
     private String conceptoMovimiento;
+    @Column(name = "usuario")
     private String usuario;
 
     public movimientoDinero(Double montoMovimiento, String conceptoMovimiento, String usuario) {
@@ -36,5 +48,5 @@ public class movimientoDinero {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
-
+    
 }
